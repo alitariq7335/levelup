@@ -1,0 +1,33 @@
+"use client";
+
+import React from "react";
+import { useRouter } from "next/navigation";
+
+export default function Contact() {
+  const router = useRouter();
+
+  return (
+    <div>
+      {/* Contact Section */}
+      <section className="py-40 relative overflow-hidden bg-zinc-950">
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h2 className="text-4xl md:text-8xl font-black italic tracking-tighter leading-[1] mb-12">
+            " You know <span className="text-blue-500">your potential</span>
+            <br /> Let us get <span className="text-blue-500">you there.</span>"
+          </h2>
+
+          <p className="text-center text-xl md:text-md mb-10">
+            Level Up, get set, grow.
+          </p>
+
+          <button
+            onClick={() => router.push("/contact")}
+            className="px-12 py-5 border-2 border-white rounded-full font-black text-xs uppercase tracking-[0.5em] cursor-pointer hover:bg-white hover:text-black transition-all"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+}
