@@ -34,7 +34,7 @@ const OurStory: React.FC = () => {
                     OUR STORY
                   </p>
                   <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
-                    WHAT WE{" "}
+                    WHAT WE {" "}
                     <span className="text-blue-500">DO</span>
                   </h2>
                   <p className="text-gray-400">
