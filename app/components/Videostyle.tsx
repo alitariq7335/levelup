@@ -12,28 +12,28 @@ const Videostyle: React.FC = () => {
             desc: "Film-grade color grading and storytelling",
             features: ["Color Grading", "Smooth Transitions", "Sound Design", "VFX"],
             gradient: "from-blue-500/20 to-blue-500/50",
-            // icon: "🎬"
+            icon: "🎬"
         },
         dynamic: {
             title: "Dynamic",
             desc: "Fast-paced cuts with energy and motion",
             features: ["Quick Cuts", "Motion Graphics", "Beat Sync", "Trendy Effects"],
             gradient: "from-blue-500/20 to-blue-500/50",
-            // icon: "⚡"
+            icon: "⚡"
         },
         corporate: {
             title: "Corporate",
             desc: "Professional and polished business content",
             features: ["Clean Editing", "Lower Thirds", "Logo Animation", "Professional"],
             gradient: "from-blue-500/20 to-blue-500/50",
-            // icon: "💼"
+            icon: "💼"
         },
         social: {
             title: "Social Media",
             desc: "Optimized for Instagram, TikTok, YouTube",
             features: ["Vertical Format", "Captions", "Trending Audio", "Hooks"],
             gradient: "from-blue-500/20 to-blue-500/50",
-            // icon: "📱"
+            icon: "📱"
         }
     };
 

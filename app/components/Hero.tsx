@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
 const Hero: React.FC = () => {
@@ -60,20 +61,19 @@ const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center lg:justify-start">
-              <button
-                onClick={() => scrollToSection('ai-architect')}
+              <Link href={'/services'}
                 className="group relative w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-blue-600 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm text-center overflow-hidden transition-all shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] uppercase tracking-wider cursor-pointer"
               >
-                <span className="relative z-10">Initiate AI Roadmap</span>
+                <span className="relative z-10">Our Services</span>
                 <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500"></div>
-              </button>
+              </Link>
 
-              <button
-                onClick={() => scrollToSection('services')}
+              <Link
+                href={'/about' }              
                 className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 border border-white/20 rounded-xl sm:rounded-2xl font-black text-xs sm:text-sm text-center hover:bg-white/5 hover:border-white/40 transition-all uppercase tracking-[0.2em] sm:tracking-[0.3em] cursor-pointer"
               >
-                Our Services
-              </button>
+                About Us
+              </Link>
             </div>
           </div>
 

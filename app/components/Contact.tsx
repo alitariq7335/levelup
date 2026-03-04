@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Contact() {
   const router = useRouter();
@@ -20,12 +21,11 @@ export default function Contact() {
             Level Up, get set, grow.
           </p>
 
-          <button
-            onClick={() => router.push("/contact")}
+          <Link href={'/contact'}
             className="px-12 py-5 border-2 border-white rounded-full font-black text-xs uppercase tracking-[0.5em] cursor-pointer hover:bg-white hover:text-black transition-all"
           >
             Contact Us
-          </button>
+          </Link>
         </div>
       </section>
     </div>

@@ -7,28 +7,28 @@ const Digitools: React.FC = () => {
 
   const marketingTools = [
     { name: "Google Analytics", category: "Analytics",
-      //  icon: "📊"
+       icon: "📊"
        },
     { name: "Meta Business", category: "Social Ads",
-      //  icon: "👥" 
+       icon: "👥" 
       },
     { name: "HubSpot", category: "CRM & Email",
-      //  icon: "📬"
+       icon: "📬"
        },
     { name: "Semrush", category: "SEO",
-      //  icon: "🔍"
+       icon: "🔍"
        },
     { name: "Mailchimp", category: "Email",
-      //  icon: "📧"
+       icon: "📧"
        },
     { name: "Hootsuite", category: "Social Media",
-      //  icon: "🐦"
+       icon: "🐦"
        },
     { name: "Google Ads", category: "PPC",
-      //  icon: "💰"
+       icon: "💰"
        },
     { name: "Canva Pro", category: "Design",
-      //  icon: "🎨"
+       icon: "🎨"
        }
   ];
 

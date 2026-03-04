@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Aboutcall() {
   const router = useRouter();
@@ -22,12 +23,11 @@ export default function Aboutcall() {
             </span>
           </h2>
 
-          <button
-            onClick={() => router.push("/contact")}
+          <Link href={'/contact'}
             className="px-10 sm:px-14 md:px-16 py-4 sm:py-5 md:py-6 border border-white rounded-full font-black text-xs sm:text-sm uppercase tracking-[0.5em] hover:bg-white hover:text-black transition-all cursor-pointer"
           >
             Initiate Contact
-          </button>
+          </Link>
 
         </div>
       </section>

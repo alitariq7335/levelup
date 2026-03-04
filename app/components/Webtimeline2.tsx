@@ -4,45 +4,51 @@ import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const developmentProcess = [
   {
-    phase: "Briefing",
-    desc: "Understanding your vision and requirements",
+    phase: "Planning",
+    duration: "1–2 weeks",
+    desc: "Requirements gathering and architecture design",
     icon: "◈",
-    accent: "#3B82F6",
+    accent: "#60a5fa",
     tag: "PHASE 01",
   },
   {
-    phase: "Review Footage",
-    desc: "Selecting the best clips and moments",
+    phase: "Design",
+    duration: "2–3 weeks",
+    desc: "UI/UX design and prototyping",
     icon: "◇",
-    accent: "#3B82F6",
+    accent: "#818cf8",
     tag: "PHASE 02",
   },
   {
-    phase: "Rough Cut",
-    desc: "Creating the initial edit structure",
+    phase: "Development",
+    duration: "6–12 weeks",
+    desc: "Agile sprints with weekly updates",
     icon: "⬡",
-    accent: "#3B82F6",
+    accent: "#38bdf8",
     tag: "PHASE 03",
   },
   {
-    phase: "Fine Tuning",
-    desc: "Color grading, effects, and polish",
+    phase: "Testing",
+    duration: "2–3 weeks",
+    desc: "QA, bug fixes, and optimization",
     icon: "◉",
-    accent: "#3B82F6",
+    accent: "#6ee7b7",
     tag: "PHASE 04",
   },
   {
-    phase: "Sound Design",
-    desc: "Music, SFX, and audio mixing",
+    phase: "Deployment",
+    duration: "1 week",
+    desc: "Launch and monitoring",
     icon: "▲",
-    accent: "#3B82F6",
+    accent: "#f472b6",
     tag: "PHASE 05",
   },
   {
-    phase: "Final Delivery",
-    desc: "Export in all required formats",
+    phase: "Support",
+    duration: "30 days",
+    desc: "Post-launch maintenance and care",
     icon: "◎",
-    accent: "#3B82F6",
+    accent: "#fb923c",
     tag: "PHASE 06",
   },
 ];
@@ -58,7 +64,7 @@ function PhaseCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 80 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.7, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
@@ -71,7 +77,7 @@ function PhaseCard({
         <motion.div
           whileHover={{ scale: 1.015, y: -4 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className={`relative group mx-auto max-w-lg ${isEven ? "lg:mr-0 lg:ml-auto" : "lg:ml-0 lg:mr-auto"}`}
+          className={`relative group mx-auto max-w-md ${isEven ? "lg:mr-0 lg:ml-auto" : "lg:ml-0 lg:mr-auto"}`}
           style={{ "--accent": step.accent } as React.CSSProperties}
         >
           {/* Glow behind card */}
@@ -84,7 +90,7 @@ function PhaseCard({
           <div
             className="absolute inset-0 rounded-2xl p-px"
             style={{
-              background: `linear-gradient(135deg, ${step.accent}40, transparent 60%, ${step.accent}40)`,
+              background: `linear-gradient(135deg, ${step.accent}40, transparent 60%, ${step.accent}20)`,
             }}
           >
             <div className="w-full h-full rounded-2xl bg-[#060610]" />
@@ -95,7 +101,7 @@ function PhaseCard({
             {/* Tag + icon row */}
             <div className="flex items-center justify-between mb-6">
               <span
-                className="text-[10px] font-bold tracking-[0.2em] px-3 py-1.5 rounded-full border"
+                className="text-[10px] font-bold tracking-[0.3em] px-3 py-1.5 rounded-full border"
                 style={{
                   color: step.accent,
                   borderColor: `${step.accent}40`,
@@ -118,7 +124,7 @@ function PhaseCard({
             </h4>
 
             {/* Duration */}
-            <div className="flex items-center gap-2 my-2">
+            <div className="flex items-center gap-2 mb-4">
               <div
                 className="h-px flex-1 max-w-[40px]"
                 style={{ background: `${step.accent}60` }}
@@ -127,6 +133,7 @@ function PhaseCard({
                 className="text-sm font-semibold tracking-wide"
                 style={{ color: step.accent }}
               >
+                {step.duration}
               </span>
             </div>
 
@@ -183,7 +190,7 @@ function PhaseCard({
   );
 }
 
-export default function Videoprocess() {
+export default function Webtimeline2() {
   const sectionRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -198,7 +205,7 @@ export default function Videoprocess() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-black px-[5%] py-32 overflow-hidden"
+      className="relative bg-[#04040e] px-[5%] py-32 overflow-hidden"
     >
       {/* Background grid */}
       <div
@@ -213,8 +220,8 @@ export default function Videoprocess() {
       />
 
       {/* Ambient blobs */}
-      <div className="absolute top-1/4 left-0 w-96 h-96 rounded-full opacity-[0.04] blur-3xl from-blue-400 to-indigo-600 pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-96 h-96 rounded-full opacity-[0.04] blur-3xl from-blue-400 to-indigo-600 pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-96 h-96 rounded-full opacity-[0.04] blur-3xl bg-blue-500 pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-96 h-96 rounded-full opacity-[0.04] blur-3xl bg-indigo-500 pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto">
         {/* Heading */}
@@ -225,15 +232,26 @@ export default function Videoprocess() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="text-center mb-24"
         >
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xs font-bold tracking-[0.4em] text-blue-400/60 mb-6 uppercase"
+          >
+            From concept to launch
+          </motion.p>
+
           <h2 className="text-6xl md:text-8xl font-black text-white leading-none tracking-tight">
-            Our&nbsp;
-             <span
+            Development
+            <br />
+            <span
               className="text-transparent bg-clip-text"
               style={{
-                backgroundImage: "linear-gradient(135deg, #60A5FA 0%, #4F46E5 100%)",
+                backgroundImage: "linear-gradient(135deg, #60a5fa 0%, #818cf8 50%, #38bdf8 100%)",
               }}
             >
-               Process
+              Timeline
             </span>
           </h2>
 
@@ -254,7 +272,7 @@ export default function Videoprocess() {
             <div className="w-px h-full bg-white/5" />
             {/* Animated fill */}
             <motion.div
-              className="absolute top-18 left-0 w-px origin-top"
+              className="absolute top-0 left-0 w-px origin-top"
               style={{
                 scaleY: lineScaleY,
                 background: "linear-gradient(to bottom, #60a5fa, #818cf8, #38bdf8)",
@@ -264,12 +282,26 @@ export default function Videoprocess() {
           </div>
 
           {/* Phase cards */}
-          <div className="space-y-10 cursor-pointer">
+          <div className="space-y-10">
             {developmentProcess.map((step, index) => (
               <PhaseCard key={index} step={step} index={index} />
             ))}
           </div>
         </div>
+
+        {/* Footer CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="text-center mt-24"
+        >
+          <p className="text-gray-500 text-sm tracking-wide">
+            Total estimated timeline:{" "}
+            <span className="text-blue-400 font-semibold">14–22 weeks</span>
+          </p>
+        </motion.div>
       </div>
     </section>
   );

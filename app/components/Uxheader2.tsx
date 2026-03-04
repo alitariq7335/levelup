@@ -7,16 +7,16 @@ const Uxheader2: React.FC = () => {
 
   const stats = [
     { value: "500+", label: "Designs Created",
-      //  icon: "🎨"
+       icon: "🎨"
        },
     { value: "200+", label: "Happy Clients",
-      //  icon: "😊"
+       icon: "😊"
        },
     { value: "50+", label: "Brands Built",
-      //  icon: "🏆"
+       icon: "🏆"
        },
     { value: "4.9/5", label: "Average Rating",
-      //  icon: "⭐"
+       icon: "⭐"
        }
   ];
 
