@@ -154,9 +154,17 @@ const Navbar: React.FC = () => {
 
             {/* Portfolio with Dropdown */}
             <div className="relative group">
-              <button
+              <Link
+                href="/portfolio"
                 className={`flex items-center gap-2 hover:text-blue-500 transition-colors cursor-pointer uppercase
-                  ${pathname?.startsWith("/portfolio") || pathname?.includes("brand") || pathname?.includes("creatives") || pathname?.includes("videos") || pathname?.includes("websites") ? "text-white border-b-2 border-blue-600 pb-1" : ""}`}
+    ${pathname?.startsWith("/portfolio") ||
+                    pathname?.includes("brand") ||
+                    pathname?.includes("creatives") ||
+                    pathname?.includes("videos") ||
+                    pathname?.includes("websites")
+                    ? "text-white border-b-2 border-blue-600 pb-1"
+                    : ""
+                  }`}
               >
                 Portfolio
                 <svg
@@ -172,13 +180,13 @@ const Navbar: React.FC = () => {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </button>
+              </Link>
 
               <div className="absolute top-full left-0 mt-6 w-60 rounded-xl bg-black/95 backdrop-blur-xl border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 shadow-2xl">
                 <ul className="py-4">
                   <li>
                     <Link
-                      href="/brand-identities"
+                      href="/portfolio/brandidentities"
                       className="block w-full text-left px-6 py-3 text-[11px] xl:text-[12px] tracking-widest uppercase text-gray-400 hover:text-white hover:bg-blue-500/90 transition-all cursor-pointer"
                     >
                       Brand Identities
@@ -186,7 +194,7 @@ const Navbar: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      href="/our-creatives"
+                      href="/portfolio/creatives"
                       className="block w-full text-left px-6 py-3 text-[11px] xl:text-[12px] tracking-widest uppercase text-gray-400 hover:text-white hover:bg-blue-500/90 transition-all cursor-pointer"
                     >
                       Our Creatives
@@ -194,7 +202,7 @@ const Navbar: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      href="/our-videos"
+                      href="/portfolio/videos"
                       className="block w-full text-left px-6 py-3 text-[11px] xl:text-[12px] tracking-widest uppercase text-gray-400 hover:text-white hover:bg-blue-500/90 transition-all cursor-pointer"
                     >
                       Our Videos
@@ -202,7 +210,7 @@ const Navbar: React.FC = () => {
                   </li>
                   <li>
                     <Link
-                      href="/our-websites"
+                      href="/portfolio/websites"
                       className="block w-full text-left px-6 py-3 text-[11px] xl:text-[12px] tracking-widest uppercase text-gray-400 hover:text-white hover:bg-blue-500/90 transition-all cursor-pointer"
                     >
                       Our Websites

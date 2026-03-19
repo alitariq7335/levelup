@@ -105,6 +105,12 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
 
               <li>
+                <Link href="/portfolio" className="hover:text-white transition-colors">
+                  Portfolio
+                </Link>
+              </li>
+
+              <li>
                 <Link href="/contact" className="hover:text-white transition-colors">
                   Contact Us
                 </Link>
