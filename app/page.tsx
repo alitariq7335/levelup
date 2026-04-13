@@ -12,6 +12,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
 import InteractiveOrb from "./components/InteractiveOrb";
+import Graphicdesign from "./components/Graphicdesign";
+import Eventsection from "./components/Eventsection";
 
 
 const Home: React.FC = () => {
@@ -49,8 +51,10 @@ const Home: React.FC = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <Services />
+      <Graphicdesign />
       <Portfolios />
+      <Services />
+      <Eventsection />
       <Testimonial />
       <Technologies />
       <Contact />

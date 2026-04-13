@@ -11,7 +11,7 @@ const technologies = [
   },
   {
     name: "iOS",
-    icon: "/assets/tech/Tech-tab/ios.svg"
+    icon: "/assets/tech/tech-tab/ios.svg"
   },
   {
     name: "Android",
@@ -19,7 +19,7 @@ const technologies = [
   },
   {
     name: "HTML",
-    icon: "/assets/tech/Tech-tab/html.svg"
+    icon: "/assets/tech/tech-tab/html.svg"
   },
   {
     name: "CSS",
