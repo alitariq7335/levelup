@@ -5,28 +5,28 @@ const projects = [
   {
     title: "Brand Identities",
     category: "Real Estate Architecture",
-    link: "/projects/web-automation",
+    link: "/portfolio/brandidentities",
     image: "/assets/brands.webp",
     size: "large"
   },
   {
     title: "Our Creatives",
     category: "Fintech Interface",
-    link: "/projects/web-automation",
+    link: "/portfolio/creatives",
     image: "/assets/creatives.webp",
     size: "small"
   },
   {
     title: "Our Videos",
     category: "E-Commerce Velocity",
-    link: "/projects/web-automation",
+    link: "/portfolio/videos",
     image: "/assets/videos.webp",
     size: "small"
   },
   {
     title: "Our Websites",
     category: "E-Commerce Velocity",
-    link: "/projects/web-automation",
+    link: "/portfolio/websites",
     image: "/assets/websites.webp",
     size: "large"
   }
@@ -42,16 +42,16 @@ const Portfolios: React.FC = () => {
             <h3 className="text-blue-500 font-black uppercase text-[12px] mb-4">
               Case Archives
             </h3>
-            <h2 className="text-5xl md:text-8xl font-black tracking-tighter uppercase">
+            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
               SELECTED{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">
                 DOMAINS.
               </span>
             </h2>
           </div>
-          <button className="hidden md:block px-10 py-4 border border-white/10 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all">
+          <a href="/portfolio" className="hidden md:block px-10 py-4 border border-white/10 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white/5 transition-all">
             View All Ops
-          </button>
+          </a>
         </div>
 
         {/* Portfolio Grid */}

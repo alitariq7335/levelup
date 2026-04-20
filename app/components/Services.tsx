@@ -5,7 +5,7 @@ const services = [
     title: "Graphic Designing",
     tag: "Creativity",
     protocol: "Design Protocol",
-    link: "/services/graphic-designing",
+    link: "/services/graphicdesign",
     description: [
       "Logo Design",
       "Interactive Social Media Posts",
@@ -19,7 +19,7 @@ const services = [
     title: "Web Development",
     tag: "Engineering",
     protocol: "Design Protocol",
-    link: "/services/graphic-designing",
+    link: "/services/webdevelopment",
     description: [
       "E-Commerce Development.",
       "Web Hosting and Deployment.",
@@ -34,7 +34,7 @@ const services = [
     title: "App Development",
     tag: "Innovation",
     protocol: "Design Protocol",
-    link: "/services/graphic-designing",
+    link: "/services/appdevelopment",
     description: [
       "Progressive Web Apps.",
       "App Store Deployment.",
@@ -49,7 +49,7 @@ const services = [
     title: "Video Editing",
     tag: "Production",
     protocol: "Design Protocol",
-    link: "/services/graphic-designing",
+    link: "/services/videoediting",
     description: [
       "VFX and Special Effects.",
       "Professional Video Editing.",
@@ -64,7 +64,7 @@ const services = [
     title: "Digital Marketing",
     tag: "Growth",
     protocol: "Design Protocol",
-    link: "/services/graphic-designing",
+    link: "/services/digitalmarketing",
     description: [
       "E-Commerce Marketing.",
       "Social Media Marketing.",
@@ -79,7 +79,7 @@ const services = [
     title: "UI / UX Design",
     tag: "Experience",
     protocol: "Design Protocol",
-    link: "/services/graphic-designing",
+    link: "/services/uiux",
     description: [
       "Interaction Design.",
       "UX Research & Strategy.",
@@ -98,19 +98,32 @@ const Services: React.FC = () => {
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between text-center md:text-start mb-24 gap-10">
+
           <div className="max-w-2xl">
             <h3 className="text-blue-500 font-black uppercase text-[12px] mb-4">
               Service Ecosystem
             </h3>
-            <h2 className="text-6xl md:text-8xl font-black tracking-tighter uppercase leading-[0.8]">
+
+            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
               DIGITAL <br />
               <span className="text-white/20">WEAPONRY.</span>
             </h2>
           </div>
 
-          <p className="text-gray-500 max-w-sm text-sm uppercase tracking-widest font-bold leading-relaxed border-l-2 border-blue-600 pl-8">
-            Each service is a module designed for total market dominance.
-          </p>
+          <div className="flex flex-col items-center md:items-start gap-6 max-w-sm">
+            <p className="text-gray-500 text-sm uppercase tracking-widest font-bold leading-relaxed border-l-2 border-blue-600 pl-8">
+              Each service is a module designed for total market dominance.
+            </p>
+
+            {/* Button */}
+            <a href="/services" className="group flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-black text-xs uppercase tracking-[0.2em] transition-all shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+              Explore Services
+              <svg className="group-hover:translate-x-1 transition-transform" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M1 6H11M7 2L11 6L7 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
+
         </div>
 
         {/* Cards */}
@@ -166,14 +179,14 @@ const Services: React.FC = () => {
                 {/* Protocol Link */}
                 <a
                   href={s.link}
-                  className="pt-8 border-t border-white/10 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all hover:text-blue-500"
+                  className="pt-8 border-t group/svg border-white/10 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all hover:text-blue-500"
                 >
                   <span className="text-[10px] font-black tracking-widest uppercase">
                     {s.protocol}
                   </span>
 
                   <svg
-                    className="w-5 h-5 text-blue-500 transition-transform duration-300 group-hover:translate-x-1"
+                    className="w-8 h-8 text-blue-500 group-hover/svg:bg-white px-2 py-2 rounded-full transition-transform duration-300 group-hover:translate-x-1 group-hover/svg:transition"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

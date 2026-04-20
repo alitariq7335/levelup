@@ -121,7 +121,7 @@ export default function Testimonial() {
               <h3 className="text-blue-500 font-black uppercase text-[12px] mb-3 md:mb-4 lg:mb-6">
                 Client Synchronicity
               </h3>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black uppercase tracking-tighter leading-[0.9] md:leading-none">
+              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none md:leading-none">
                 VOICES FROM <br /> THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">NETWORK.</span>
               </h2>
             </div>
