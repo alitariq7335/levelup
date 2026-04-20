@@ -39,6 +39,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
           {/* Brand Section */}
           <div className="w-full md:w-[35%]">
+
+            {/* Logo */}
+            <Link href="/" className="flex items-center space-x-2 md:space-x-3 cursor-pointer group z-[110]">
+              <img
+                src="/assets/footer-logo.png"
+                alt="Logo"
+                className="w-30 md:w-20 md:h-auto object-cover mb-5"
+              />
+            </Link>
+
             <h2 className="text-5xl font-black mb-8 leading-[0.9] tracking-tighter uppercase">
               READY TO <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">LEVEL UP?</span>
             </h2>

@@ -48,10 +48,11 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 md:space-x-3 cursor-pointer group z-[110]">
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-xl group-hover:rotate-180 transition-transform duration-700 shadow-[0_0_20px_rgba(37,99,235,0.4)]" />
-            <span className="text-lg md:text-2xl font-black tracking-tighter uppercase text-white">
-              LEVEL UP <span className="text-blue-500">SOL.</span>
-            </span>
+            <img
+              src="/assets/logo.png"
+              alt="Logo"
+              className="w-50 md:w-60 md:h-auto object-cover"
+            />
           </Link>
 
           {/* Desktop Menu */}
