@@ -111,7 +111,7 @@ const Services: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start gap-6 max-w-sm">
-            <p className="text-gray-500 text-sm uppercase tracking-widest font-bold leading-relaxed border-l-2 border-blue-600 pl-8">
+            <p className="text-gray-500 text-sm uppercase tracking-widest font-bold leading-relaxed border-l-2 border-blue-600 pl-4 md:pl-8">
               Each service is a module designed for total market dominance.
             </p>
 
@@ -131,7 +131,7 @@ const Services: React.FC = () => {
           {services.map((s, idx) => (
             <div
               key={idx}
-              className="group relative h-[550px] rounded-[3rem] overflow-hidden border border-white/5 bg-zinc-950 transition-all duration-700 hover:-translate-y-2 hover:border-blue-500/50"
+              className="group relative h-[450px] md:h-[550px] rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-white/5 bg-zinc-950 transition-all duration-700 hover:-translate-y-2 hover:border-blue-500/50"
             >
               {/* Image */}
               <div className="absolute inset-0 transition-transform duration-1000 group-hover:scale-105">
@@ -144,7 +144,7 @@ const Services: React.FC = () => {
               </div>
 
               {/* Content */}
-              <div className="relative z-10 p-12 h-full flex flex-col justify-between">
+              <div className="relative z-10 p-6 md:p-12 h-full flex flex-col justify-between">
                 <div>
                   {/* Icon */}
                   <div className="w-14 h-14 mb-10 text-blue-500 group-hover:text-white transition-colors">
@@ -164,7 +164,7 @@ const Services: React.FC = () => {
                   </span>
 
                   {/* Title */}
-                  <h4 className="text-3xl font-black uppercase mb-4">
+                  <h4 className="text-2xl md:text-3xl font-black uppercase mb-4">
                     {s.title}
                   </h4>
 
