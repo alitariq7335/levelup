@@ -51,12 +51,12 @@ const Home: React.FC = () => {
       <Navbar />
       <Hero />
       <Marquee />
-      <Graphicdesign />
-      <Portfolios />
       <Services />
+      <Portfolios />
+      <Technologies />
+      <Graphicdesign />
       <Eventsection />
       <Testimonial />
-      <Technologies />
       <Contact />
       <InteractiveOrb />
       <Footer onNavigate={handleNavigate}/>

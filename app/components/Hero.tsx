@@ -29,14 +29,14 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className="relative min-h-screen flex items-center pt-24 md:pt-20 pb-16 md:pb-0 overflow-hidden"
+      className="relative min-h-screen flex items-center pt-45 xl:pt-20 lg:pt-24 md:pt-50 pb-16 md:pb-10 overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Dynamic Background Glows */}
       <div className="absolute top-0 -left-10 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-blue-600/10 rounded-full mix-blend-screen filter blur-[120px] md:blur-[180px] opacity-40 animate-blob"></div>
       <div className="absolute bottom-0 -right-10 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-indigo-600/10 rounded-full mix-blend-screen filter blur-[120px] md:blur-[180px] opacity-40 animate-blob animation-delay-2000"></div>
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+      <div className="container mx-auto px-2 sm:px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           {/* Text Content */}
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[8rem] font-black tracking-tighter leading-[0.85] sm:leading-[0.8] mb-6 sm:mb-8 uppercase">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-[6rem] xxl:text-[8rem] font-black tracking-tighter leading-[0.85] sm:leading-[0.8] mb-6 sm:mb-8 uppercase">
               LEVEL UP <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600 inline-block">
                 SOLUTIONS.
