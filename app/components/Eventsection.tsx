@@ -163,7 +163,7 @@ const Eventsection: React.FC = () => {
                     {/* FEATURED — takes 2 cols */}
                     <div className="lg:col-span-3 group rounded-2xl overflow-hidden border border-blue-500/15 hover:border-blue-500/30 transition-all duration-500 cursor-pointer flex flex-col">
                         {/* Image */}
-                        <div className="relative flex-1 min-h-[220px]">
+                        <div className="relative flex-1 min-h-[250px]">
                             <img
                                 src={featured.image}
                                 alt={featured.title}
@@ -212,12 +212,12 @@ const Eventsection: React.FC = () => {
                         {rest.map((ev, i) => (
                             <div
                                 key={ev.code}
-                                className={`group border border-white/5 hover:border-blue-500/20 rounded-2xl overflow-hidden bg-white/[0.015] hover:bg-white/[0.025] transition-all duration-500 cursor-pointer flex flex-row ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-6"
+                                className={`group border border-white/5 hover:border-blue-500/20 rounded-2xl overflow-hidden bg-white/[0.015] hover:bg-white/[0.025] transition-all duration-500 cursor-pointer flex flex-col md:flex-row ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-6"
                                     }`}
                                 style={{ transitionDelay: visible ? `${300 + i * 100}ms` : "0ms" }}
                             >
                                 {/* Thumbnail */}
-                                <div className="relative w-[110px] sm:w-[140px] shrink-0 overflow-hidden">
+                                <div className="relative w-full min-h-[250px] md:min-h-auto md:w-[140px] shrink-0 overflow-hidden">
                                     <img
                                         src={ev.image}
                                         alt={ev.title}

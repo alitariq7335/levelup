@@ -110,7 +110,7 @@ const Services: React.FC = () => {
             </h2>
           </div>
 
-          <div className="flex flex-col items-center md:items-start gap-6 max-w-sm">
+          <div className="flex flex-col items-center md:items-start gap-6 md:mx-0 mx-auto max-w-sm">
             <p className="text-gray-500 text-sm uppercase tracking-widest font-bold leading-relaxed border-l-2 border-blue-600 pl-4 md:pl-8">
               Each service is a module designed for total market dominance.
             </p>

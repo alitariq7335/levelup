@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <div>
       {/* Contact Section */}
-      <section className="py-40 relative overflow-hidden bg-zinc-950">
+      <section className="py-24 md:py-36 relative overflow-hidden bg-zinc-950">
         <div className="container mx-auto px-6 text-center relative z-10">
           <h2 className="text-4xl md:text-8xl font-black italic tracking-tighter leading-[1] mb-12">
             " You know <span className="text-blue-500">your potential</span>
@@ -22,7 +22,7 @@ export default function Contact() {
           </p>
 
           <Link href={'/contact'}
-            className="px-12 py-5 border-2 border-white rounded-full font-black text-xs uppercase tracking-[0.5em] cursor-pointer hover:bg-white hover:text-black transition-all"
+            className="px-6 md:px-12 py-3 md:py-5 border-2 border-white rounded-full font-black text-xs uppercase tracking-[0.5em] cursor-pointer hover:bg-white hover:text-black transition-all"
           >
             Contact Us
           </Link>
