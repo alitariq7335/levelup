@@ -132,12 +132,12 @@ export default function Webstack() {
 
         {/* Tabs */}
         <div className="flex justify-center py-16">
-          <div className="flex border border-white/30 rounded overflow-hidden relative">
+          <div className="flex md:flex-nowrap flex-wrap justify-between md:justify-start border border-white/30 rounded overflow-hidden relative">
             {tabs.map((tab, index) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(index)}
-                className={`px-6 py-3 text-sm font-semibold transition-all duration-300 relative cursor-pointer
+                className={`px-6 py-3 w-full md:w-50 text-sm font-semibold transition-all duration-300 relative cursor-pointer
                   ${activeTab === index
                     ? "bg-blue-600 text-white"
                     : "text-white/70 hover:text-white"
@@ -157,7 +157,7 @@ export default function Webstack() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="flex flex-wrap justify-center gap-10"
+            className="flex flex-wrap justify-center gap-2 space-y-5 sm:space-y-0 sm:gap-10"
           >
             {getActiveData().map((item: any, index: number) => (
               <motion.div
@@ -166,7 +166,7 @@ export default function Webstack() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.05 }}
                 whileHover={{ y: -8, scale: 1.05 }}
-                className="flex flex-col items-center gap-4 group w-36"
+                className="flex flex-col items-center gap-4 group w-20 sm:w-36"
               >
                 <img
                   src={item.icon}

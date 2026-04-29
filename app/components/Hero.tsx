@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-400 font-light max-w-2xl mx-auto lg:mx-0 mb-8 sm:mb-10 lg:mb-12 leading-relaxed">
+            <p className="lg:text-md text-gray-400 font-light max-w-2xl mx-auto lg:mx-0 mb-8 sm:mb-10 lg:mb-12 leading-relaxed">
               At Level Up, we believe that our success is directly attributed to the talented individuals who make up our team. Our team members are experts in their respective fields and share a passion for software development and delivering exceptional results to our clients.
             </p>
 
@@ -105,19 +105,19 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Status Badge - Top Right */}
-                <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 glass p-3 sm:p-4 md:p-6 rounded-[1.5rem] sm:rounded-[2rem] border-blue-500/40 z-20 backdrop-blur-3xl animate-float animation-delay-2000 shadow-lg">
+                {/* <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 glass p-3 sm:p-4 md:p-6 rounded-[1.5rem] sm:rounded-[2rem] border-blue-500/40 z-20 backdrop-blur-3xl animate-float animation-delay-2000 shadow-lg">
                   <div className="flex items-center space-x-2 sm:space-x-3 mb-1 sm:mb-2">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-500 rounded-full animate-ping"></div>
                     <p className="text-[8px] sm:text-[10px] font-black tracking-[0.2em] sm:tracking-[0.3em] text-blue-400 uppercase">Status: Live</p>
                   </div>
                   <p className="text-sm sm:text-lg md:text-xl font-black tracking-tighter uppercase">AI AGENT V.5</p>
-                </div>
+                </div> */}
 
                 {/* Status Badge - Bottom Left */}
-                <div className="absolute bottom-6 -left-6 sm:bottom-8 sm:-left-8 md:bottom-10 md:-left-10 glass p-3 sm:p-4 md:p-6 rounded-[1.5rem] sm:rounded-[2rem] border-purple-500/40 z-20 backdrop-blur-3xl animate-float animation-delay-4000 shadow-lg">
+                {/* <div className="absolute bottom-6 -left-6 sm:bottom-8 sm:-left-8 md:bottom-10 md:-left-10 glass p-3 sm:p-4 md:p-6 rounded-[1.5rem] sm:rounded-[2rem] border-purple-500/40 z-20 backdrop-blur-3xl animate-float animation-delay-4000 shadow-lg">
                   <p className="text-[8px] sm:text-[10px] font-black tracking-[0.2em] sm:tracking-[0.3em] text-purple-400 uppercase mb-1 sm:mb-2">Global Sync</p>
                   <p className="text-xs sm:text-sm font-black uppercase tracking-wider">Active: 12</p>
-                </div>
+                </div> */}
               </div>
 
               {/* Orbital Graphic Elements - Hidden on mobile for performance */}

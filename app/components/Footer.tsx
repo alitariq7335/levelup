@@ -31,17 +31,17 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   };
 
   return (
-    <footer className="relative z-0 pt-24 pb-5 border-t border-white/5 bg-black">
+    <footer className="relative z-0 pt-24 border-t border-white/5 bg-black">
       <div className="container mx-auto px-6">
 
         {/* FLEX LAYOUT */}
-        <div className="flex flex-col md:flex-row flex-wrap gap-10 mb-24">
+        <div className="flex flex-col md:flex-row text-center md:text-start flex-wrap gap-10 mb-24">
 
           {/* Brand Section */}
           <div className="w-full md:w-[35%]">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 md:space-x-3 cursor-pointer group z-[110]">
+            <Link href="/" className="flex items-center space-x-2 md:space-x-3 justify-center md:justify-start cursor-pointer group z-[110]">
               <img
                 src="/assets/favicon.png"
                 alt="Logo"
@@ -53,7 +53,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               READY TO <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">LEVEL UP?</span>
             </h2>
 
-            <p className="text-gray-500 max-w-md text-lg leading-relaxed mb-10">
+            <p className="text-gray-500 mx-auto md:mx-0 max-w-md text-lg leading-relaxed mb-10">
               Serving visionaries from Lahore to London. We are the bridge to your digital dominance.
             </p>
 
@@ -185,7 +185,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
             <ul className="space-y-8">
               {/* Address */}
-              <li className="flex items-center space-x-4 group">
+              <li className="flex items-center justify-center md:justify-start space-x-4 group">
                 <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition-all">
                   <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -198,7 +198,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
 
               {/* Phone */}
-              <li className="flex items-center space-x-4 group">
+              <li className="flex items-center justify-center md:justify-start space-x-4 group">
                 <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition-all">
                   <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -215,7 +215,7 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
 
               {/* Email */}
-              <li className="flex items-center space-x-4 group">
+              <li className="flex items-center justify-center md:justify-start space-x-4 group">
                 <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-500/20 transition-all">
                   <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -236,12 +236,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center py-5 border-t border-white/5 text-[12px] text-gray-600 font-black uppercase">
-          <span>© 2024 LEVEL UP SOLUTIONS. TOTAL DOMINANCE SECURED.</span>
-          <span className="mt-6 md:mt-0 flex items-center">
-            <span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>
-            DESIGNED IN PAKISTAN FOR GLOBAL SCALE
-          </span>
+        <div className="border border-t-white/10 text-center items-center py-5 border-t border-white/5 text-[12px] text-gray-600 font-black uppercase">
+          <span>© 2026 LEVEL UP SOLUTIONS. TOTAL DOMINANCE SECURED.</span>
         </div>
 
       </div>

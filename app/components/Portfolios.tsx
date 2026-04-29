@@ -59,7 +59,7 @@ const Portfolios: React.FC = () => {
           {projects.map((p, i) => (
             <div
               key={i}
-              className={`group relative overflow-hidden rounded-[3rem] bg-black border border-white/5 h-[600px] transition-all duration-700 hover:border-blue-500/30 ${
+              className={`group relative overflow-hidden rounded-[3rem] bg-black border border-white/5 h-[300px] md:h-[600px] transition-all duration-700 hover:border-blue-500/30 ${
                 p.size === "large" ? "lg:col-span-2" : ""
               }`}
             >
@@ -79,7 +79,7 @@ const Portfolios: React.FC = () => {
               {/* Bottom Overlay */}
               <a
                 href={p.link}
-                className="absolute bottom-0 left-0 p-12 w-full transition-all duration-500"
+                className="absolute bottom-0 left-0 p-6 md:p-12 w-full transition-all duration-500"
               >
                 {/* Category */}
                 <div className="flex items-center space-x-3 mb-4 translate-y-4 group-hover:translate-y-0 transition-transform">
