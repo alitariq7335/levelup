@@ -92,13 +92,13 @@ const Hero: React.FC = () => {
 
               {/* Character Image */}
               <div className="relative z-10 animate-float">
-                <div className="rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] overflow-hidden relative">
+                <div className="overflow-hidden relative">
                   <img
-                    src="/assets/hero-img.avif"
+                    src="/assets/hero-2.png"
                     alt="3D Cyber Agent"
-                    className="w-full h-auto object-cover scale-110 brightness-110 saturate-125 transition-all duration-700"
+                    className="w-full h-auto object-cover scale-102 brightness-110 saturate-125 transition-all duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div> */}
 
                   {/* Digital Grid Overlay */}
                   <div className="absolute inset-0 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05]"></div>
