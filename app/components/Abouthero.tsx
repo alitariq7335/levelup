@@ -26,18 +26,18 @@ const Abouthero: React.FC = () => {
             {/* Left Content */}
             <div className="w-full lg:w-1/2">
               <h3 className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 border border-blue-500/30 rounded-full bg-blue-500/10 text-blue-400 text-[8px] sm:text-[10px] font-black tracking-[0.1em] sm:tracking-[0.2em] uppercase">
-                The Nexus
+                About Us
               </h3>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-[6rem] xxl:text-[8rem] font-black  leading-tight sm:leading-snug md:leading-[0.85] mb-6 sm:mb-8 uppercase">
-                WHO WE<br />
+              <h1 className="text-5xl md:text-6xl lg:text-5xl xl:text-[4rem] xxl:text-[6rem] font-black leading-tight sm:leading-snug lg:leading-[1em] mb-6 sm:mb-8 uppercase">
+                How We Put Your <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600">
-                ARE
+                Startup On The Map
                 </span>
               </h1>
-              <p className="text-xl sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-full md:max-w-3xl">
+              <p className="text-sm sm:text-md md:text-xl text-gray-400 font-light leading-relaxed mb-4 max-w-full md:max-w-3xl">
                 Level Up Solutions is a full-service digital marketing agency helping businesses dominate online before the competition does. We are a team of highly motivated, skilled, creative, and passionate minds. Give us a spark of an idea, and our team of enthusiasts brings it to life with artistry and precision. From SEO and social media marketing to PPC, content creation, and web development, we deliver strategies that skyrocket visibility, engagement, and revenue.
               </p>
-              <p className="text-xl sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-full md:max-w-3xl">
+              <p className="text-sm sm:text-md md:text-xl text-gray-400 font-light leading-relaxed mb-4 max-w-full md:max-w-3xl">
                 Don’t get left behind. Our blend of creativity, data-driven insights, and cutting-edge technology ensures your brand not only competes but leads in the digital world. The time to level up is now.
               </p>
             </div>
@@ -58,26 +58,26 @@ const Abouthero: React.FC = () => {
 
                 {/* Character Image */}
                 <div className="relative z-10 animate-float">
-                  <div className="rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] overflow-hidden border border-white/10 shadow-2xl relative">
+                  <div className="rounded-[2rem] sm:rounded-[3rem] md:rounded-[4rem] overflow-hidden relative">
                     <img
-                      src="/assets/hero-img.avif"
+                      src="/assets/hero.png"
                       alt="3D Cyber Agent"
                       className="w-full h-auto object-cover scale-110 brightness-110 saturate-125 transition-all duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div>
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40"></div> */}
 
                     {/* Digital Grid Overlay */}
                     <div className="absolute inset-0 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.05]"></div>
                   </div>
 
-                  <div className="absolute -bottom-10 -right-10 glass p-6 sm:p-8 rounded-3xl border-blue-600/30 backdrop-blur-2xl">
+                  {/* <div className="absolute -bottom-10 -right-10 glass p-6 sm:p-8 rounded-3xl border-blue-600/30 backdrop-blur-2xl">
                     <p className="text-[10px] font-black tracking-widest text-blue-400 uppercase mb-2">
                       Current Uplink
                     </p>
                     <p className="text-lg sm:text-2xl font-black tracking-tighter uppercase">
                       Lahore - London - Dubai
                     </p>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Orbital Graphic Elements - Hidden on mobile for performance */}
