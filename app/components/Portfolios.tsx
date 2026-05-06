@@ -34,7 +34,7 @@ const projects = [
 
 const Portfolios: React.FC = () => {
   return (
-    <section id="case-studies" className="py-32 bg-black">
+    <section id="case-studies" className="py-32 bg-zinc-950">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="flex flex-col md:flex-row text-center md:text-start md:items-center justify-between mb-24">

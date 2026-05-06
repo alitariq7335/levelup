@@ -4,9 +4,9 @@ export default function Marquee() {
   return (
     <div>
         {/* Marquee Section */}
-      <div className="py-12 border-y border-white/5 overflow-hidden whitespace-nowrap bg-zinc-950/50 relative">
-        <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-10" />
-        <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black to-transparent z-10" />
+      <div className="py-12 border-y border-white/5 overflow-hidden whitespace-nowrap bg-zinc-950 relative -z-10">
+        <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-2" />
+        <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black to-transparent z-2" />
 
         <div className="flex w-max animate-marquee">
           {[...Array(2)].map((_, loopIndex) => (

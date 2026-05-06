@@ -11,17 +11,9 @@ const Abouthero: React.FC = () => {
     setMouseOffset({ x, y });
   };
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-
 
   return (
-    <div className="min-h-screen bg-zinc-950" onMouseMove={handleMouseMove}>
+    <div className="min-h-screen pt-5 xl:pt-20 lg:pt-24 md:pt-50 pb-16 md:pb-10" onMouseMove={handleMouseMove}>
       {/* Visual Narrative Section */}
       <section className="relative pt-38 pb-20 overflow-hidden">
         {/* Abstract Background Shapes */}
@@ -30,40 +22,24 @@ const Abouthero: React.FC = () => {
         <div className="absolute -left-10 top-50 w-60 h-60 border border-white/5 rounded-full animate-[spin_20s_linear_infinite_reverse]"></div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-24">
             {/* Left Content */}
             <div className="w-full lg:w-1/2">
-              <h3 className="text-blue-500 font-black uppercase text-[12px] mb-8">
+              <h3 className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 border border-blue-500/30 rounded-full bg-blue-500/10 text-blue-400 text-[8px] sm:text-[10px] font-black tracking-[0.1em] sm:tracking-[0.2em] uppercase">
                 The Nexus
               </h3>
-              <h1 className="text-4xl sm:text-5xl md:text-[8rem] font-black uppercase mb-12 leading-tight sm:leading-snug md:leading-[0.85]">
-                WHO WE <br />
+              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-[6rem] xxl:text-[8rem] font-black  leading-tight sm:leading-snug md:leading-[0.85] mb-6 sm:mb-8 uppercase">
+                WHO WE<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600">
-                  ARE
+                ARE
                 </span>
               </h1>
-              <p className="text-xl sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-full sm:max-w-xl">
-                levelup is a creative advertising agency. Our Creative Team offers full advertising service for brand building from market planning & technique consulting.
+              <p className="text-xl sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-full md:max-w-3xl">
+                Level Up Solutions is a full-service digital marketing agency helping businesses dominate online before the competition does. We are a team of highly motivated, skilled, creative, and passionate minds. Give us a spark of an idea, and our team of enthusiasts brings it to life with artistry and precision. From SEO and social media marketing to PPC, content creation, and web development, we deliver strategies that skyrocket visibility, engagement, and revenue.
               </p>
-
-              <div className="flex flex-wrap gap-6 sm:gap-12">
-                <div className="group">
-                  <p className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-black text-white mb-2 transition-colors group-hover:text-blue-600">
-                    2021
-                  </p>
-                  <p className="text-[10px] uppercase tracking-widest text-gray-600 font-bold">
-                    Genesis Year
-                  </p>
-                </div>
-                <div className="group">
-                  <p className="text-4xl sm:text-5xl md:text-5xl lg:text-5xl font-black text-white mb-2 transition-colors group-hover:text-blue-600">
-                    50+
-                  </p>
-                  <p className="text-[10px] uppercase tracking-widest text-gray-600 font-bold">
-                    Protocol Specialists
-                  </p>
-                </div>
-              </div>
+              <p className="text-xl sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-full md:max-w-3xl">
+                Don’t get left behind. Our blend of creativity, data-driven insights, and cutting-edge technology ensures your brand not only competes but leads in the digital world. The time to level up is now.
+              </p>
             </div>
 
             {/* Right Image */}
