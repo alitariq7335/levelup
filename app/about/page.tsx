@@ -12,7 +12,10 @@ import Technologies from '../components//Technologies';
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import InteractiveOrb from "../components/InteractiveOrb";
-import Vision from "../components/Vision";
+import Process from "../components/Process";
+import Whychoose from "../components/Whychoose";
+import Marquee from "../components/Marquee";
+
 
 export default function Page() {
     const router = useRouter();
@@ -27,12 +30,13 @@ export default function Page() {
         <div>
             <Navbar />
             <Abouthero />
+            <Marquee />
             <About />
-            <Vision />
+            <Whychoose />
+            <Process />
             <Team />
             <Testimonial />
             <Technologies />
-            {/* <Aboutcall /> */}
             <Contact />
             <InteractiveOrb />
             <Footer onNavigate={handleNavigate} />
