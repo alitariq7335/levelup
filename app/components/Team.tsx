@@ -37,7 +37,7 @@ export default function Team() {
   return (
     <div>
       {/* Team Section */}
-      <section className="py-40 bg-zinc-950 relative overflow-hidden">
+      <section className="py-40 bg-black relative overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-24">
             <h3 className="text-blue-500 font-black uppercase text-[12px] mb-6">Core Operatives</h3>

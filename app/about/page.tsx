@@ -8,9 +8,11 @@ import Testimonial from '../components/Testimonial';
 import Team from '../components//Team';
 import About from '../components//About';
 import Abouthero from '../components//Abouthero';
-import Aboutcall from '../components//Aboutcall';
 import Technologies from '../components//Technologies';
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
+import InteractiveOrb from "../components/InteractiveOrb";
+import Vision from "../components/Vision";
 
 export default function Page() {
     const router = useRouter();
@@ -26,10 +28,13 @@ export default function Page() {
             <Navbar />
             <Abouthero />
             <About />
+            <Vision />
             <Team />
-            <Technologies />
             <Testimonial />
-            <Aboutcall />
+            <Technologies />
+            {/* <Aboutcall /> */}
+            <Contact />
+            <InteractiveOrb />
             <Footer onNavigate={handleNavigate} />
         </div>
     );

@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
 
             {/* Description */}
             <p className="lg:text-md text-gray-400 font-light max-w-2xl mx-auto lg:mx-0 mb-8 sm:mb-10 lg:mb-12 leading-relaxed">
-              At Level Up, we believe that our success is directly attributed to the talented individuals who make up our team. Our team members are experts in their respective fields and share a passion for software development and delivering exceptional results to our clients.
+              We combine excellent web hosting with expert digital marketing strategies that rank your brand higher, boost visibility, drive traffic, and convert customers
             </p>
 
             {/* CTA Buttons */}

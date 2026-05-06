@@ -115,10 +115,10 @@ const Graphicdesign: React.FC = () => {
                                 <span className="text-blue-500 font-black uppercase text-[12px] mb-4">Visual Craft Division</span>
                             </div>
                             <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-[0.8]">
-                                <span className="text-white/90">GRAPHIC</span>
-                                <br />
+                                <span className="text-white/90">GRAPHIC </span>
+                                {/* <br /> */}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">
-                                    DESIGN
+                                DESIGN
                                 </span>
                             </h2>
                         </div>

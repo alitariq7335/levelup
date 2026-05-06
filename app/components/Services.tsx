@@ -94,7 +94,7 @@ const services = [
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-32 bg-zinc-950 relative">
+    <section id="services" className="py-32 bg-black relative">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between text-center md:text-start mb-24 gap-10">
