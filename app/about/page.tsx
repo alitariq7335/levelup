@@ -40,6 +40,7 @@ export default function Page() {
             <Contact />
             <InteractiveOrb />
             <Footer onNavigate={handleNavigate} />
+            
         </div>
     );
 }
