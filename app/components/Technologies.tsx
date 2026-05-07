@@ -116,19 +116,19 @@ export default function Webstack() {
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         {/* Section Reveal Animation */}
-        {/* <motion.div
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-        > */}
+        >
           <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
             Choose the tech stack for your{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-600">
               next business idea
             </span>
           </h2>
-        {/* </motion.div> */}
+        </motion.div>
 
         {/* Tabs */}
         <div className="flex justify-center py-16">
@@ -150,7 +150,7 @@ export default function Webstack() {
         </div>
 
         {/* Animated Tab Content */}
-        {/* <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
             initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,7 @@ export default function Webstack() {
               </motion.div>
             ))}
           </motion.div>
-        </AnimatePresence> */}
+        </AnimatePresence>
 
       </div>
     </section>
